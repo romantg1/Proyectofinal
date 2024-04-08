@@ -11,9 +11,12 @@ public class Equipo {
 
     public Equipo(String nombre, int partidosGanados, int partidosPerdidos, int partidosEmpatados) {
         this.nombre = nombre;
-        this.partidosGanados = 0;
-        this.partidosPerdidos = 0;
-        this.partidosEmpatados = 0;
+        this.partidosGanados = partidosGanados;
+        this.partidosPerdidos = partidosPerdidos;
+        this.partidosEmpatados = partidosEmpatados;
+    }
+
+    public Equipo(long nextLong, int partidosGanados, int partidosPerdidos, int partidosEmpatados) {
     }
 
     public String getNombre() {
