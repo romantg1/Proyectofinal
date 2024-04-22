@@ -1,3 +1,4 @@
+import java.util.Comparator;
 import java.util.Objects;
 
 public class Equipo {
@@ -5,18 +6,20 @@ public class Equipo {
     public int partidosGanados;
     public int partidosPerdidos;
     public int partidosEmpatados;
+    public int puntos;
 
     public Equipo() {
     }
 
-    public Equipo(String nombre, int partidosGanados, int partidosPerdidos, int partidosEmpatados) {
+    public Equipo(String nombre, int partidosGanados, int partidosPerdidos, int partidosEmpatados, int puntos) {
         this.nombre = nombre;
         this.partidosGanados = partidosGanados;
         this.partidosPerdidos = partidosPerdidos;
         this.partidosEmpatados = partidosEmpatados;
+        this.puntos = partidosGanados*3+partidosEmpatados;
     }
 
-    public Equipo(long nextLong, int partidosGanados, int partidosPerdidos, int partidosEmpatados) {
+    public Equipo(int partidosGanados, int partidosPerdidos, int partidosEmpatados, int puntos) {
     }
 
     public String getNombre() {
@@ -51,22 +54,19 @@ public class Equipo {
         this.partidosEmpatados = partidosEmpatados;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Equipo equipo = (Equipo) o;
-        return Objects.equals(nombre, equipo.nombre);
+    public int getPuntos() {
+        return puntos;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(nombre);
+    public void setPuntos(int puntos) {
+        this.puntos = puntos;
     }
 
     @Override
     public String toString() {
-        return nombre+"\t"+partidosGanados+"\t"+partidosEmpatados+"\t"+partidosPerdidos;
+        return nombre+"\t"+puntos+"\t"+partidosGanados+"\t"+partidosEmpatados+"\t"+partidosPerdidos;
     }
 }
+
+
 
