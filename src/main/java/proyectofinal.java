@@ -13,6 +13,7 @@ public class proyectofinal {
                     añadirResultados(equipos);
                     break;
                 case 2:
+                    ordenar(equipos);
                     clasificacion(equipos);
                     break;
                 case 3:
@@ -35,10 +36,11 @@ public class proyectofinal {
     }
     //Método para mostrar la clasificación de la liga
     public static void clasificacion(Equipo[]equipos){
+        int cont=1;
         System.out.printf("%-9s%-20s%-8s%-3s%-3s%-3s%-3s%n","POSICION", "EQUIPO", "PUNTOS", "PJ", "PG", "PE", "PP");
-        for (int i = 0; i < equipos.length; i++) {
+        for (int i = equipos.length-1; i > 0; i--) {
             System.out.printf("%-9s%-20s%-8s%-3s%-3s%-3s%-3s%n",
-                    i+1,
+                    cont++,
                     equipos[i].getNombre(),
                     equipos[i].getPuntos(),
                     (equipos[i].getPartidosGanados()+equipos[i].getPartidosEmpatados()+equipos[i].getPartidosPerdidos()),
@@ -71,5 +73,19 @@ public class proyectofinal {
         for (int i = 0; i < equipos.length; i++) {
             equipos[i].setPuntos((equipos[i].getPartidosGanados()*3)+equipos[i].getPartidosEmpatados());
         }
+    }
+    public static void ordenar(Equipo[] equipos) {
+        boolean cambio;
+        do {
+            cambio = false;
+            for (int i = 0; i < equipos.length - 1; i++) {
+                if (equipos[i].getPuntos() > equipos[i + 1].getPuntos()) {
+                    Equipo temp = equipos[i];
+                    equipos[i] = equipos[i + 1];
+                    equipos[i + 1] = temp;
+                    cambio = true;
+                }
+            }
+        } while (cambio);
     }
 }
