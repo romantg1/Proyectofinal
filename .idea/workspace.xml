@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="540d9d40-24fa-45e5-b216-25f3c322d353" name="Changes" comment="tercer commit">
+    <list default="true" id="540d9d40-24fa-45e5-b216-25f3c322d353" name="Changes" comment="cuarto commit (implementé la clase ordenar())">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Equipo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/proyectofinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proyectofinal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,15 +34,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/daw128/Desktop/Román/cd/Proyectofinal/src/main/java/proyecto",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\daw128\Desktop\Román\cd\Proyectofinal\src\main\java\proyecto" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="proyectofinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="proyectofinal" />
@@ -86,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713771115235</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="cuarto commit (implementé la clase ordenar())">
+      <created>1714980381815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714980381815</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +117,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="primer commit" />
     <MESSAGE value="tercer commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="tercer commit" />
+    <MESSAGE value="cuarto commit (implementé la clase ordenar())" />
+    <option name="LAST_COMMIT_MESSAGE" value="cuarto commit (implementé la clase ordenar())" />
   </component>
 </project>
